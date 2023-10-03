@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Kutu Modeli </title>
+        <meta charset="utf-8">
+        <meta name="description" content="Bu bölümde CSS'kutu modelini ve özelliklerini inceleyeceğiz.">
+        <meta name="Author" content="Berke Mert Öztürk">
+        <meta name="keywords" content="Css,HTML,KutuModeli,Block,İnline,Komutlar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="İmages/Diablo.ico" type="Diablo İcon">
+        <style>
+            h1 {
+
+                border-style: solid;
+                border-width: 10px;
+                border-color: aqua;
+                width: 300px;
+                height: 80px;
+                padding: 50px 0px 0px 50px;
+                margin: 30px;
+            }
+
+            h2 {
+                border-style:solid;
+                border-width: 8px;
+                border-color: violet;
+                width: 250px;
+                height: auto;
+                padding: 0px 50px 0px 0px;
+                margin: 30px;
+                background-color: violet;
+            }
+
+            p {
+                border-style: solid;
+                border-width: 5px;
+                border-color: aqua;
+                width: 200px;
+                height: 170px;
+                background-color: aqua;
+                background-image: url(İmages/BloodKnight.png);
+                background-size: 300px;
+                padding: 0px 50px 0px 50px;
+                margin: 30px;
+            }
+
+            h3 {
+                border-style: dashed;
+                border-width: 3px;
+                border-color: chartreuse;
+                width: 250px;
+                height: 150px;
+                padding: 50px 50px 0px 50px;
+                margin: 30px;
+                background-image: url(İmages/Necromancer.png);
+                background-size: 300px;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+
+            }
+
+            #ozel {
+                width: 500px;
+                height: 300px;
+                border-style: dashed;
+                border-width: 5px;
+                border-color: black;
+                padding: 50px 30px;
+                margin: 50px 100px;
+                background-color: yellow;
+                background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202306/1301/9ec43dd6aaa3289696699a70926c70e6d929ed3f8e3f3bd9.png);
+                background-size: 700px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1> CSS Kutu Modeli </h1>
+        <h2> CSS Kavramları </h2>
+        <h3> CSS Özellikleri </h3>
+        <p> Seçiciler (Selectors) </p>
+        <p> Etiketler  </p>
+        <p> Javascript Farkındalığı </p>
+        <br>
+        <img src="https://uzmanimakademi.net/img/kutu-modeli.png" alt="CSS Kutu Model" title="Kutu Modeli" width="500">
+
+        <br>
+
+        <p id="ozel">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </body>
+</html>
+
+<!--
+
+    Kutu Boyutu ve Aralıklar
+    ========================
+
+    Kutu boyutunu belirlemek için; "width" ve "height"
+    Kutu aralıklarını belirlemek için; "padding (iç aralık)" ve "margin (dış aralık)" kullanılır.
+
+    Ör; padding: üst sağ alt sol;
+        padding: 0px 50px 0px 50px;
+
+    Ör; margin: 30px 50px;
+        margin: üst-alt sağ-sol
+
+    Kutu Kenarları:
+    ===============
+    - Kutu kenarlarını kontrol etmek için; "border" özelliği kullanılır.
+
+    Özellikler;
+
+    -  border-style: Kenar çizgisi tipini belirler. ("none, solid, dotted, dashed, double" gibi değerler alabilir.)
+
+        Ör; border-style: solid dotted;
+            border-style: solid dotted dashed double;
+                            üst    sağ   alt   sol
+
+        şeklinde her bir yön için kenarlık sitili değiştirilebilir.
+
+    -  border-width: Çizgi kalınlığını ayarlar. ("px, thin, medium, thick" gibi değerler alabilir.)
+
+        Ör; border-width: 10px 40px;
+            border-width: 10px 40px 60px 20px;
+                          üst   sağ   alt  sol
+
+        şeklinde çerçeve kalınlığı her bir yön için ayrı ayrı ifade edilebilir.
+
+    -  border-color: Kenarlık rengini belirler. (RGB renk kodları kullanılabilir.)
+
+        ör; border-color: red green;
+            border-color: red green blue yellow;
+                      üst  sağ  alt  sol
+    
+       şeklinde her bir yön için kenarlık farklı renk ile ifade edilebilir.
+
+    Kutu Ardalanı (Arka Plan):
+    ==========================
+    - Ardalanı değiştirmek için; "background" özelliği kullanılır. Ayrıca; aşağıda yer alan özelliklerde kullanılr.
+
+    - background-color: Kutu arka plan rengini değiştirir.
+
+        ör; background-color: yellow;
+
+    - background-image: Kutu içine resim ekler.
+
+        ör; background-image: url(İmages/Necromancer.png);
+
+        Not: Resim arkaplana eklerken sadece bilgisayarımıza indirdiğimiz resimleri değil; intarnet üzerinden de görsel çekebiliriz.
+
+    - background-size: Kutu içine eklenen görselin boyutunu değiştirir.
+
+        ör; background-size: 290px;
+
+    Ardalan Konumu:
+    ===============
+
+    - Ardalan resminin konumunu belirlemek için aşağıdaki özellikler kullanılır.
+
+    - background-repeat: Resmin tekrar etmesini engelleyebiliriz. "no-repeat" değeri ile veya x/y düzlemlerinde resimlerin dizilmesini sağlayabiliriz.
+    - background-position: Arka plan resminin konumunu belirlememizi sağlar. "center, bottom, top, left, rigt vb."
+    - background-attachment: "fixed" değeri ile sayfayı aşağı doğru kaydırdığımızda resim sabit kalır. Ancak "scroll" değeri ile sayfayı aşağı kaydırdıkça resimde kayar.
+
+    Kutu Davranışı:
+    =============== 
+
+    Not: Bazı durumlarda block ve inline etiketlere müdahale ederek durumlarını değiştirebiliz. 
+
+    Block; hx,p,li,form,table,div
+
+    İnline; a,em,b,strong,i,spam
+
+    Örnek;
+    
+    <style>
+        li { display: inline;}
+        a { display: block; }
+    </style>
+
+    Etiketlerin davranışlarını değiştirebiliriz.
+    
+-->
