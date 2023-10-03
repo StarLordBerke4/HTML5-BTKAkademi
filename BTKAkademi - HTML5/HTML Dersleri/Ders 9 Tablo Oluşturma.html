@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Tablolar İle Çalışıyorum</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Tablolar ile html de çalışmayı öğreniyorum.">
+        <meta name="Author" content="Berke Mert Öztürk">
+        <meta name="keywords" content="tablo,table,tr,td">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="İmages/Diablo.ico" type="Diablo İcon">
+    </head>
+    <body>
+        <h1>Tablolar İle Çalışmak:</h1>
+        <table border="4">
+            <tr><td>1</td><td>İsim</td><td>Şehir</td><td>Yaş</td></tr>
+            <tr><td>2</td><td>Berke</td><td>Konya</td><td>25</td></tr>
+            <tr><td>3</td><td>İsmail</td><td>Zonguldak</td><td>25</td></tr>
+            <tr><td>4</td><td>Halil</td><td>Kırşehir</td><td>25</td></tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        
+        <h2> Tablo Örnekleri </h2>
+        <table border="3" bordercolor="blue" cellspacing="5">
+            <thead> 
+                <tr><td>Sıra</td><td>Yaş</td><td>Cinsiyet</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>23</td><td>Erkek</td></tr>
+                <tr><td>2</td><td>25</td><td>Kadın</td></tr>
+                <tr><td>3</td><td>24</td><td>Kadın</td></tr>
+                <tr><td>4</td><td>18</td><td>Erkek</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="3">En Küçük Yaş: 18</td></tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>
+
+<!--
+    Tablo Notlarım:
+
+    Tablo Oluşturma:
+    • <table> etiketi kullanılarak tablo oluşturulur.
+    • Tablolar basitçe satır ve sütunlardan oluşur. Satır ve sütunların kesiştiği yerde adına hücre denilen kutucuklar oluşur. 
+    • <tr> etiketi satırları, <td> etiketi sütunları oluşturur.
+    • "border"  özelliği kullanılarak tablo kenarlıklarını kalınlaştırabilir veya inceltebiliriz. Border değeri 0 olursa kenarlık oluşmaz.
+    • "bordercolor" özelliği ile ise; tablo kenerlığının rengi değiştirilebilir.
+    • "cellspacing" özelliği ise; tablo içerikleri ve kenarlıklar arası boşlukları ayarlamamıza yarar. 
+    • "cellpading" özelliği ise; hücre içindeki metinlerin kenarlar ile oranlanarak daha düzgün görünmesini sağlar. Tüm değerler pixel cinsinden uygulanır.
+
+
+    Tablo Biçimlendirme:
+
+    •  Eğer tablolar konusuna biraz daha dalmak ve biraz daha ayrıntılı biçimlendirme yapmak isterseniz <caption>,  <th>, <thead>, <tbody> ve <tfood> komutlarını kullanabilirsiniz. 
+
+•   <caption>: tabloya başlık vermek için kullanılır
+•   <th>: tablo başlıklarını içeren hücreleri oluşturur
+•   <thead>: başlık bölümünü belirtir
+•   <tbody>: veri bölümünü belirtir
+•   <tfood>: tablonun alt bölümünü belirtir
+
+    Hücre Birleştirme:
+
+    • Hücreleri birleştirmek için "colspan" veya "rowspan" komutu kullanılır. 
+    •   colspan: satırlardaki hücreleri birleştirir
+    •   rowspan: sütunlardaki hücreleri birleştirir. 
+
+-->

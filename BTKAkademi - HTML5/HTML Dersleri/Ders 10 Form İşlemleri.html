@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title> Form İşlemleri </title>
+        <meta charset="utf-8">
+        <meta name="description" content="Bu bölümde HTML'de form özelliklerini inceleyeceğiz.">
+        <meta name="Author" content="Berke Mert Öztürk">
+        <meta name="keywords" content="Form,Öge,Değer,işlem">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="İmages/Diablo.ico" type="Diablo İcon">
+    </head>
+
+    <body>
+        <h1> Kayıt Formu </h1>
+        <form name="kayit" action="kayit.php" method="get">
+            Ad Soyad: <input type="text" name="adsoyad">
+            <br>
+            Yaş: <input type="text" name="yaş">
+            <br>
+            <input type="submit">
+        </form>
+
+            <br>
+            <br>
+
+            <h2> Üye Kayıt Formu </h2>
+            <form name="kayit" action="kayit.php" method="get">
+                Ad Soyad: <input type="text" name="adsoyad" id="idadsoyad" size="20" maxlength="30" required>
+                <br>
+                <input type="submit">
+            </form>
+
+            <br>
+            <br>
+
+            <h2> Form </h2>
+            <form name="Kayıt" action="kayit.php" method="get">
+                Ad Soyad:
+                <input type="text" name="ad" size="20" maxlength="30" required>
+                <input type="submit" value="Yolla">
+                <input type="reset" value="Yok Et">
+            </form>
+
+            <br>
+            <br>
+
+            <h2> Kayıt Formu 2.0 </h2>
+            <form name="kayıt" action="kayıt.php" method="get"></form>
+            Ad Soyad:
+            <input type="text" name="ad" id="idadsoyad" size="20" maxlength="30" required>
+            <br>
+            E Mail:
+            <input type="email" name="mail" id="mail" size="20" maxlength="30" required>
+            <br>
+            Web Sitesi:
+            <input type="url" name="web" id="web" size="20" maxlength="50" required>
+            <br>
+            Yaş:
+            <input type="number" name="yaş" id="yaş" required>
+            <br>
+            <input type="submit" id="onay">
+            <input type="reset" id="temizle">
+
+            <br>
+            <br>
+
+            <h2> Düzenli Üye Kayıt Formu </h2>
+            <form name="kayıt" action="kayıt.php" method="get">
+                <table border="2">
+                    <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad" maxlength="30" placeholder="adsoyad" required></td></tr>
+                    <tr><td>E Mail:</td><td><input type="email" name="email" maxlength="30" required></td></tr>
+                    <tr><td>Yaş:</td><td><input type="number" name="yaş" required></td></tr>
+                    <tr><td></td><td><input type="submit" name="gönder"><input type="reset" name="sıfırla"></td></tr>
+                </table>
+            </form>
+
+            <br>
+            <br>
+
+            <h2>Form Özellikleri</h2>
+            <form name="kayıt" action="kayıt.php" method="get" autocomplete="on">
+                Ad Soyad: <input name="adsoyad" id="adsoyad" size="20"  maxlength="20" required placeholder="ad soyad isim" autofocus>
+                <br>
+                <input type="submit" value="gönder" id="onay">
+                <input type="reset" value="sıfırla" id="iptal">
+            </form>
+
+            <br>
+            <br>
+
+            <h2>Metin Kutusu</h2>
+            <form name="test" action="test.php" method="get" autocomplete="on">
+                <table border="2">
+                    <tr><td>Ad Soyad:</td><td><input name="adsoyad" id="ad" maxlength="20" required autofocus></td></tr>
+                    <tr><td>Email:</td><td><input name="mail" id="mail" maxlength="20" required></td></tr>
+                    <tr><td>Öneri:</td><td><textarea name="öneri" id="öneri" cols="20" rows="5"></textarea></td></tr>
+                    <tr><td></td><td><input type="submit" name="gönder"><input type="reset" name="iptal"></td></tr>
+                </table>
+            </form>
+
+            <br>
+            <br>
+
+            <h1>Onay Kutusu</h1>
+            <form name="onay" action="kayıt.php" method="get">
+                <input type="checkbox" name="medeni">Evli
+                <br>
+                <input type="checkbox" name="bulten" checked>Bultene Abone Ol!
+                <br>
+                <!-- "checked" özelliği sayesinde seçnek seçili olarak gelir.-->
+                <br>
+                <input type="submit" value="Abone Ol">
+                <input type="reset" value="İptal">
+            </form>
+
+            <br>
+            <br>
+
+            <h1> Seçenek Kutusu </h1>
+            <form name="secenek" action="kayıt.php" method="get">
+                <h2> En Sevdiğin Dizi? </h2>
+                <input type="radio" name="dizi" value="Lost">Lost
+                <input type="radio" name="dizi" value="The Walking Dead">The Walking Dead
+                <input type="radio" name="dizi" value="Game of Thrones">Game of Thrones
+                <br>
+                <br>
+                <input type="submit" value="Gönder">
+            </form>
+
+            <br>
+            <br>
+
+                <h1> Seçenek Listesi / Combobox </h1>
+            <form name="combobox" action="kayıt.php" method="get">
+                Doğum Yeri:
+                <select name="dyeri" id="dyeri">
+                <option> Ankara </option>
+                <option> İstanbul </option>
+                <option> İzmir </option>
+                <option> Adana </option>
+                <option selected> Bolu </option>
+            </select>
+                <br>
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+
+            <br>
+            <br>
+
+            <h2> Resimli Onay Formu </h2>
+            <form name="onay" action="kayıt.php" method="get">
+                Kullanıcı Adı:<input type="text" name="Kullanıcı" id="Kullanıcı" required>
+                <br>
+                Şifre: <input type="password" name="sifre" id="sifre" required>
+                <br>
+                Email: <textarea name="email" id="email" cols="20" rows="20" required></textarea>
+                <br>
+                <br>
+                <input type="image" src="İmages/Submit.jpg" width="100">
+            </form>
+
+            <br>
+            <br>
+
+            <h2> Resimli ve Düzenli Form </h2>
+            <form action="kayıt.php" method="get" name="onay">
+                <table border="2">
+                    <tr><td>Kullanıcı Adı:</td><td><input type="text" name="Kullanıcı" required maxlength="15"></td></tr>
+                    <tr><td>Şifre:</td><td><input type="password" name="sifre" required maxlength="15"></td></tr>
+                    <tr><td>Email:</td><td><input type="email" name="email" required maxlength="15"></td></tr>
+                    <tr><td></td><td><input type="image" src="İmages/Submit.jpg" width="100"></td></tr>
+                </table>
+            </form>
+
+            <br>
+            <br>
+
+            <h2> Form Deneme </h2>
+            <form name="deneme" action="kayıt.php" method="get">
+                <label for="Kullanıcı Adı:">Kullanıcı Adı:</label>
+                <input type="text" name="Kullanıcı" id="Kullanıcı" size="20" maxlength="30" required value="Osman"><br>
+                <label for="Sifre">Şifre:</label>
+                <input type="password" name="sifre" id="sifre" size="20" maxlength="30" required>
+                <br>
+                <br>
+                <label for="cinsiyet">Cinsiyet:</label><br>
+                Erkek:<input type="radio" name="cinsiyet" id="erkek">
+                Kadın:<input type="radio" name="cinsiyet" id="kadın">
+                Diğer:<input type="radio" name="cinsiyet" id="diğer">
+                <br>
+                <br>
+                <input type="submit" name="gönder" id="gönder">
+                <input type="reset" name="iptal" id="iptal">
+            </form>
+
+            <h2>Form Deneme 2 </h2>
+            <form name="deneme2" action="kayıt.php" method="get">
+                <label for="Kullanıcı Adı"> Kullanıcı Adı:</label>
+                <input type="text" name="kullanıcı" id="kullanıcı" size="20" maxlength="20" required value="Buğra Ek İster">
+                <label for="Sifre">şifre:</label>
+                <input type="password" maxlength="20" size="20" id="sifre" name="sifre">
+                <br>
+                <br>
+                <label for="Takımlar">Takımlar:</label><br>
+                Fenerbahçe: <input type="checkbox" name="Fenerbahçe" id="Takımlar">
+                Galatasaray: <input type="checkbox" name="Galatasaray" id="Takımlar">
+                Beşiktaş: <input type="checkbox" name="Beşiktaş" id="Takımlar">
+                <br>
+                <br>
+                <input type="submit" name="Gönder">
+                <input type="reset" name="İptal">
+            
+            </form>
+        
+    </body>
+
+</html>
+
+<!--
+    Form Oluşturma:
+
+    •  Form oluşturmak için <form> tagı kullanılır. 
+    •  Forma isim vermek için "name", forma girilen verilerin hangi sayfaya gönderileceğini belirlemek için "action", verilerin hedef sayfaya gönderilme yöntemini belirlemek için ise "method" özelliği kullanılır. 
+    • Ayrıca; forma girilecek max karakter sayısını "maxlength" özelliği kullanılır.
+    • "size" özelliği kullanılarak metin kutusunun kaç karakter genişliğinde görüneceğini gösterir.
+    • "required" metin kutusuna veri yazmayı zorunlu hale getiririz.
+    • "type" özelliği ile form içine yerleştirmek istediğimiz öge cinsini belirleriz.
+    • "id" özel tanımlama yapmaya yarar.
+    • "value" özelliği ile onay butonu üzerindeki metin bölümlerini değiştirebiliriz. Değer girişi yapılabilir.
+
+    Not: <label> etiketinin "for" özelliğini kullanarak form içinde isimlendirme yapabiliriz.
+
+
+    Onay ve İptal Butonları:
+
+    • Forma girilen verilerin onaylanması ve action ile belirlenen sayfaya gönderilmesi için onay (submit) butonu, formun temizlenmesi için ise iptal (reset) butonu kullanılır.
+
+        Ortak Özellikler:
+
+        • size: form elemanının genişliği.
+        • value: form elemanının değeri.
+        • placeholder: form elemanında bir açıklama metni görünmesini sağlar. (İp ucudur.)
+        • name: form elemanının benzersiz adı. 
+        • id: form elemanının tanım kodu. css veya JS kodu uygulamak için kullanılır.
+        • autofocus: sayfa açıldığında fare imlecinin form elemanını aktif etmesini sağlar. 
+        •   autocomplete: formlara girilen verilerin daha önce girilen veriler dikkate alınarak tamamlanmasını sağlar.
+        • maxlenght: form elemanına girilebilecek maksimum karakter miktarını belirler.
+        •   required: form elemanın mutlaka doldurulması gerektiğini belirtir. form elemanı boş bırakılırsa hata mesajı alırsınız.
+        •   disabled: form elemanının pasif hale getirilmesini ve kullanılmamasını sağlar.
+
+        Metin Alanı (textarea):
+        
+        •  Metin kutusu tek satırlık veri girişi için kullanılırken, metin alanı çok satırlı veri girişi için kullanılır. Kodları aşağıdaki gibidir:
+        <textarea> özelliği ile "Metin Alanı" oluşturulabilir. "rows" özelliği ile kaç satır metin kutusu oluşacağına karar verebiliz. "cols" özelliği ile girilecek karakter sayısını belirleriz.
+
+        Onay Kutusu (Checkbox)
+
+        •  Ziyaretçiden Evet/Hayır, Doğru/Yanlış, Onayla/Onaylama gibi cevaplar girmesini istiyorsanız checkbox kullanırsınız. 
+        •  Formdaki onay kutularının name özelliği farklı olmalıdır.
+
+        Seçenek Kutusu (Radio)
+
+        •  Ziyaretçilerin iki veya daha fazla seçenek arasından sadece bir tanesinin seçilmesini istiyorsanız seçenek kutusu (radio) kullanılır.
+        •  Aynı gruptaki seçenek kutularının name özelliği aynı olmalıdır.
+
+        Seçenek Listesi (Combobox)
+
+        •  Eğer seçenek sayısı çok fazla ise Seçenek Listesi kullanılır. Örneğin, ziyaretçinin doğduğu ili soruyorsanız 81 tane seçenek olmalıdır...
+
+
+    -->

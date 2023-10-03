@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title> Css İle Form Biçimlendirme İşlemleri </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Bu bölümde CSS ile form biçimlendirme işlemlerine göz atacağız.">
+    <meta name="keywords" content="CSS,Metin,Paragraf,Form,Biçimlendirme,Düzenleme">
+    <meta name="Author" content="Berke Mert Öztürk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="İmages/Diablo.ico" type="Diablo İcon">
+
+    <style>
+        .formelemanları {
+            background-color: aqua;
+            color: red;
+            border-style: dashed;
+            border-color: blueviolet;
+            border-width: 3px;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+    </head>
+<body>
+    
+    <h1>CSS ile Form Biçimlendirme İşlemi</h1>
+    <br>
+    <form action="kayıt.php" method="get" name="Form">
+        <table border="0">
+            <tr>
+        <td>Ad Soyad:</td> <td><input type="text" maxlength="30" size="20" required class="formelemanları"></td>
+            </tr>
+            <tr>
+        <td>Cinsiyet: </td><td><input type="text" name="cinsiyet" maxlength="15" size="20" required class="formelemanları"></td>
+            </tr>
+            <tr>
+        <td>Email:</td><td><input type="email" name="email" maxlength="25" size="20" required class="formelemanları"></td>
+            </tr>
+            <tr>
+        <td>Yaş: </td><td><input type="number" required size="20" maxlength="10" name="yaş" class="formelemanları"></td></tr>
+            <tr>
+        <td>Mesaj:</td><td><textarea name="Mesaj" id="Mesaj" cols="21" rows="10" class="formelemanları"></textarea></td>
+            </tr>
+
+        <tr>
+            <td></td><td><input type="submit"><input type="reset"></td>
+        </tr>
+        
+    </table>
+    </form>
+</body>
+</html>
+
+<!--
+    Bu bölümde öğrendiğimiz CSS biçimlendirme bilgilerini kullanarak form elemanlarını biçimlendirme işlemini gerçekleştirdim.
+
+    "Style" etiketleri arasına yazdığım css özellikleri ile bir class oluşturdum. Ve ilgili form elemanlarına bu özellikleri tanımlayarak biçimlendirme işlemini gerçekleştirdim.
+-->
