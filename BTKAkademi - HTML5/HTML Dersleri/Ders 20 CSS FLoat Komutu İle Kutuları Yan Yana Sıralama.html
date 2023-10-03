@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title> Css Float Komutu </title>
+        <meta charset="utf-8">
+        <meta name="description" content="Css Float komutu ile kutuları mevcut web sayfasında yan yana sıralamayı öğreneceğiz.">
+        <meta name="keywords" content="CSS,Float,Kutu,Sıralama">
+        <meta name="Author" content="Berke Mert Öztürk">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="İmages/Diablo.ico" type="Diablo İcon">
+
+        <style>
+            div {
+                border-style: solid;
+                border-color: blueviolet;
+                border-width: 5px;
+                border-radius: 80px 20px;
+                background-color: aqua;
+                background-image: url(İmages/BloodKnight.png);
+                background-repeat: no-repeat;
+                background-size: 350px;
+                background-position: center;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+                margin: 10px;
+                box-shadow: 20px 20px 10px violet;
+                float: left;
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="kutu1">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vero!</p>
+        </div>
+
+        <div id="kutu2">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vero!</p>
+        </div>
+
+        <div id="kutu3">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vero!</p>
+        </div>
+
+    </body>
+</html>
+
+<!--
+    Kutuların Yaslanması (Float)
+
+    •Kutunun sola veya sağa yaslanması için float özelliği kullanılır.
+    •Diğer kutular "float" özelliği ile yaslanan kutunun etrafını sararlar.
+    •Eğer nesnelerin kutu etrafını sarmasını istemiyorsanız "clear" özelliğini kullanırsınız.
+
+    Örnek:
+
+    <style>
+        float: left;
+    </style>
+
+
+-->
