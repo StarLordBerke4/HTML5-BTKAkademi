@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title> Seçici Kullanımı </title>
+        <meta charset="utf-8">
+        <meta name="description" content="Bu bölümde css de seçici işlemlerine göz atacağız.">
+        <meta name="Author" content="Berke Mert Öztürk">
+        <meta name="keywords" content="CSS,HTML,Seçici">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="İmages/Diablo.ico" type="Diablo İcon">
+        <style>
+            h1 {
+                color: red;
+            }
+
+            p {
+                color: aqua;
+            }
+
+            #ilk {
+                color: blueviolet;
+            }
+
+            #ikinci {
+                color: chartreuse;
+            }
+
+            .kahve {
+                color: brown;
+            }
+
+            .sarı {
+                color: yellow;
+            }
+
+        </style>
+    </head>
+
+<body>
+    <h1>Başlık</h1>
+    <p id="ilk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptate laudantium, ex distinctio commodi aspernatur assumenda harum sunt itaque aut animi aperiam est eveniet perferendis optio tempora aliquam eum? Quasi.</p>
+    <br>
+    <p id="ikinci" class="sarı">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem aperiam ratione error, labore eum quis quo et dolores inventore quasi possimus itaque, quod magnam facilis temporibus cupiditate aspernatur! Perspiciatis!</p>
+    <br>
+    <br>
+    <h2 class="kahve">Başlık2</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi voluptatum dignissimos maxime nostrum laboriosam vitae, atque repellendus ipsa rem voluptas accusantium facilis cupiditate dolorum veniam necessitatibus sequi. Deleniti, incidunt?</p>
+    <p class="kahve">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quis.</p>
+    <p class="sarı">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia blanditiis doloribus voluptatum autem vero soluta quas, magnam cupiditate quidem.</p>
+
+</body>
+    
+</html>
+
+<!--
+    Not: CSS'de ID ve Class kullanımında öncelik ID dedir. Bu yüzden ıd belirtilmiş bir HTML etiketine (Seçiciye) class özelliği tanımlansa dahi özellik değişmez.
+
+    Temel Seçici Özelikleri:
+            * : Her şey seçilecek.
+            p : p tagı seçilecek.
+            #ilk :id değeri #ilk olan seçilecek.
+            .son : class değeri .son olan seçilecek.
+            h1.egik :class değeri .egik olan h1 etiketleri seçilecek.
+            p strong : p tagı içindeki tüm strong tagları seçilecek. 
+            nav #buton : nav tagı içinde  id değeri #buton tüm elemanlar seçilecek.
+            h1,h2,h3,h4,h5,h6: h1-h6 arası tüm taglar seçilecek.
+
+    NoT: CSS'de "." ile class tanımlaması yapılırken; "#" ile id tanımlaması yapılır.
+
+
+
+-->
