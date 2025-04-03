@@ -24,8 +24,6 @@ Bu repoyu "BTK Akademi | HTML5 ile Web Geliştirme Eğitimi" Projelerimi ve Ders
 
 <p>HTML, statik içerikleri sunmanın yanı sıra, dinamik ve etkileşimli elemanları tanımlamak için de kullanılır. Günümüzde HTML5 ile birlikte birçok yeni özellik geliştirilmiş olup, video ve ses gibi multimedya içeriklerin yanı sıra grafiksel içeriklerin de kolaylıkla entegrasyonunu sağlar. </p>
 
-Örneğin, <video> ve <audio> etiketleri sayesinde, kullanıcılar web sitelerinde medya dosyalarını doğrudan oynatabilirler. Ayrıca, <canvas> etiketi ile grafik çizimleri yaparak dinamik içerikler oluşturmak mümkün hale gelmiştir. HTML5, mobil cihazlar ve çeşitli ekran boyutlarına uyum sağlayabilen responsive tasarım prensipleri ile birlikte ilerleyerek, modern web uygulamalarının temelini oluşturur.
-
 <p>Bununla birlikte, HTML'in mantığı, verilerin ve içeriğin yapılandırılması üzerine odaklanırken, stil ve tasarım için CSS (Cascading Style Sheets) ile entegrasyon sağlanır. HTML, içerikler ile yapı oluştururken, CSS bu içeriklerin görsel sunumunu düzenler. JavaScript gibi programlama dilleri ise etkileşimli özellikler ekleyerek HTML ve CSS'in fonksiyonelliğini geliştirilmesine yardımcı olur. Sonuç olarak, HTML, web geliştirme sürecinin merkezinde yer alır ve internetin temel yapı taşı olarak, tüm web teknolojilerinin uyum içinde çalışmasını sağlar. Bu özellikleriyle HTML, hem web geliştiricileri hem de web tasarımcıları için vazgeçilmez bir dildir.</p>
 
 ### Kurs İle İlgili Düşüncelerim:
