@@ -26,3 +26,13 @@ Bu repoyu "BTK Akademi | HTML5 ile Web Geliştirme Eğitimi" Projelerimi ve Ders
 <p>BTK Akademi'nin "HTML5 ile Web Geliştirme Eğitimi"ne katılmak, web geliştirme konusundaki bilgi ve becerilerimi önemli ölçüde artırdı. Eğitim sürecinde, HTML5'in temellerini öğrenmekle kalmayıp, bu dili etkili bir şekilde kullanmanın yollarını da keşfettim. Multimedya içeriklerin nasıl ekleneceğini, responsive tasarımın önemini ve çeşitli formların nasıl oluşturulacağını detaylı bir şekilde öğrenmek, web sitelerimi daha dinamik ve kullanıcı dostu hale getirmemi sağladı. Uygulamalı projeler üzerinde çalışmak, öğrendiklerimi pratiğe dökme fırsatı sundu ve gerçek dünya deneyimi kazanmamı sağladı. Böylece, kurs boyunca edindiğim teorik bilgileri uygulamalı bir şekilde pekiştirmiş oldum.</p>
 
 <p>Eğitim ayrıca, katılımcılarla etkileşim kurma ve grup dinamikleri içinde çalışma imkanı sunduğu için son derece verimliydi. Diğer katılımcılarla fikir alışverişinde bulunmak, çeşitli bakış açılarını görmek ve birlikte projeler üzerinde çalışmak, hem öğrenme sürecimi zenginleştirdi hem de networking sağladı. Eğitim sonunda portföyümü geliştirdiğim projelerimle birlikte, kendime olan güvenim arttı ve kariyerime yeni bir soluk getirecek fırsatlara kapı araladı. Genel olarak, bu kurs benim için sadece bir eğitim değil, aynı zamanda web geliştirme alanında ilerlemek için attığım önemli bir adım oldu ve gelecekteki hedeflerime ulaşmamda bana rehberlik edecektir.</p>
+
+### Sertifikam
+<a href=""><img align="center" src="https://github.com/StarLordBerke4/kodluyoruzilkrepo/blob/main/%C4%B0mages/Kodluyoruz-Front-End-Web-Geli%C5%9Ftirme-_-44121164333507.jpg" alt="Sertifika" width="1100"/></a>
+
+- <b>Sertifika Adı:</b> Yazılıma İlk Adım Frontend Web Developer
+- <b>Sertifika No:</b> 44121164333507
+- <b>Sertifika URL:</b> https://drive.google.com/file/d/1VCLWZbTF_cdN8otk44O4xlWyp4tKnJrZ/view?usp=drive_link
+- <b>Linkedin Profil URL:</b> https://www.linkedin.com/in/starlordberke/
+
+<a href=""><img align="center" src="https://github.com/StarLordBerke4/-BM-Kodluyoruz/blob/main/%C4%B0mages/kodluyoruz_cover.jpg" alt="İBM" width="1100"/></a>
